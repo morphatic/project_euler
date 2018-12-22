@@ -1,0 +1,35 @@
+{
+  "name": "project_euler",
+  "version": "1.0.0",
+  "description": "JavaScript solutions to the problems posed at https://projecteuler.net/archives",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --color --watch --verbose=false",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morphatic/project_euler.git"
+  },
+  "keywords": [
+    "project",
+    "euler"
+  ],
+  "author": "Morgan Benton <morgan.benton@gmail.com> (https://morphatic.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morphatic/project_euler/issues"
+  },
+  "homepage": "https://github.com/morphatic/project_euler#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3"
+  }
+}
