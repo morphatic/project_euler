@@ -4,6 +4,8 @@
     "jest": true
   },
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "yoda": [2, "always"]
   }
 }
