@@ -13,6 +13,21 @@
 #'
 #' @examples
 #' multiples(3, 10) ## returns c(0, 3, 6, 9)
-multiples <- function(base = 3, bound = 1000) {
-  map_dbl(c(0:(ceiling(bound / base) - 1)), ~ base * .)
+# evenFibonacci.generator(bound) %::% numeric : numeric
+
+
+evenFibonacci.generator <- function(bound = 4000000, s1 = 0, s2 = 1) {
+  n1 <- s1
+  n2 <- s2
+  function() {
+    tmp <- n1 + n2
+    while (tmp %% 2 != 0) {
+      tmp <- n1 + n2
+      if (tmp > bound) return(NULL)
+      n1 <<- n2
+      n2 <<- tmp
+    }
+    return(tmp)
+  }
 }
+

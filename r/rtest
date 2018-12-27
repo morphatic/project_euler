@@ -8,7 +8,7 @@ r["CRAN"] <- "https://cran.rstudio.com"
 options(repos = r)
 
 # Create a list of required packages
-required.packages <- c("testthat", "magrittr", "purrr")
+required.packages <- c("testthat", "magrittr", "purrr", "lambda.r")
 # Figure out which ones are not already installed
 to.install <- required.packages[!(required.packages %in% installed.packages()[, "Package"])]
 # Install the missing packages if necessary
