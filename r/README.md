@@ -12,10 +12,10 @@ I'm also using [lintr](https://github.com/jimhester/lintr) to keep uniform forma
 
 ## Running the Tests
 
-To run the tests, for the first time you'll have to modify permissions on the `./rtest` file to make it executable, i.e. `chmod +x ./tests`. After that, tests can be run using:
+To run the tests, for the first time you'll have to modify permissions on the `./rtest` file to make it executable, i.e. `chmod +x ./rtest`. After that, tests can be run using:
 
 ```bash
-./tests
+./rtest
 ```
 
 To stop the tests, hit:
